@@ -2,7 +2,6 @@
 
 require '../vendor/autoload.php';
 require '../config/dependencies.php'; # load up the dependencies earlier
-require '../src/App/DeviceMapper.php';
 
 $result = $DeviceMapper->getAll();
 ?>

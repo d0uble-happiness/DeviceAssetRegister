@@ -1,6 +1,6 @@
 <?php
 
-// use App\DeviceMapper;
+use App\DeviceMapper;
 require '../src/App/DeviceMapper.php';
 
 $config = require 'settings.php';
@@ -16,4 +16,4 @@ if ($name === 'sqlite') {
     $pdo->exec('PRAGMA foreign_keys = ON');
 }
 
-$deviceMapper = new DeviceMapper($pdo);
+$DeviceMapper = new DeviceMapper($pdo);
